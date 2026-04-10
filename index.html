@@ -3,122 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمد حشام نائچ | فرزندِ پیر محل</title>
+    <title>محمد حشام نائچ | فرزندِ 747 گ ب</title>
+    <!-- گوگل فونٹس برائے خوبصورت اردو -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        :root { --dark-green: #0a3d24; --gold: #c5a01a; --soft-white: #f9f9f9; --accent: #1e6b45; }
-        body { font-family: 'Roboto', sans-serif; background: var(--soft-white); margin: 0; color: #222; scroll-behavior: smooth; }
-        .urdu { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.8; }
+        :root { --primary: #042f1a; --secondary: #c5a01a; --bg: #fdfdfd; }
+        body { font-family: 'Amiri', serif; background-color: var(--bg); margin: 0; padding: 0; color: #333; }
+        .nastaliq { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.8; }
         
-        /* Navigation (Simple & Clean) */
-        nav { background: var(--dark-green); padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: 0.3s; }
-        nav a:hover { color: var(--gold); }
-
-        /* Hero Header */
-        header { 
-            background: linear-gradient(135deg, var(--dark-green) 0%, #165a3b 100%);
-            color: white; padding: 100px 20px; text-align: center;
-            border-bottom: 10px solid var(--gold);
-        }
-        header h1 { font-size: 4.5rem; margin: 0; text-shadow: 3px 3px 5px rgba(0,0,0,0.3); }
-
-        /* Sections Styling */
-        .content-section { padding: 80px 20px; max-width: 1100px; margin: auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        /* موبائل دوستانہ ڈیزائن */
+        header { background: linear-gradient(135deg, var(--primary), #0a522c); color: white; padding: 60px 20px; text-align: center; border-bottom: 8px solid var(--secondary); }
+        h1 { font-size: 3.5rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); }
         
-        .big-card { 
-            background: white; padding: 40px; border-radius: 30px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-right: 8px solid var(--gold);
-            margin-bottom: 40px; transition: 0.4s;
-        }
-        .big-card:hover { transform: translateY(-10px); }
+        .section { padding: 40px 20px; max-width: 800px; margin: auto; }
+        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-right: 10px solid var(--secondary); margin-bottom: 30px; }
+        
+        .birth-info { background: var(--primary); color: white; padding: 30px; border-radius: 15px; text-align: center; margin: 20px 0; }
+        .birth-info h3 { color: var(--secondary); font-size: 2rem; }
 
-        .highlight-box { 
-            background: var(--dark-green); color: white; padding: 40px; 
-            border-radius: 0 50px 0 50px; margin: 40px 0; border: 2px solid var(--gold);
-        }
+        .detail-item { font-size: 1.3rem; margin: 15px 0; border-bottom: 1px dashed #ccc; padding-bottom: 5px; }
+        .detail-item strong { color: var(--primary); }
 
-        /* Lucky Number Badge */
-        .lucky-badge {
-            background: var(--gold); color: white; width: 100px; height: 100px;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 2.5rem; font-weight: bold; margin: -50px auto 20px; border: 5px solid white;
-        }
-
-        footer { background: #111; color: #888; text-align: center; padding: 40px; margin-top: 100px; }
+        footer { background: #111; color: #999; text-align: center; padding: 30px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-<nav class="urdu">
-    <a href="#intro">تعارف</a> | <a href="#life">زندگی کا مقصد</a> | <a href="#tribe">خاندانی پس منظر</a> | <a href="#vision">وژن 2030</a>
-</nav>
-
 <header>
-    <h1 class="urdu">محمد حشام نائچ</h1>
-    <p class="urdu" style="font-size: 1.8rem; color: var(--gold);">باوقار شخصیت | 747 گ ب، پیر محل</p>
+    <h1 class="nastaliq">محمد حشام نائچ</h1>
+    <p class="nastaliq" style="font-size: 1.5rem; color: var(--secondary);">فرزندِ 747 گ ب، پیر محل</p>
 </header>
 
-<div class="content-section" id="intro">
-    <div class="lucky-badge">47</div>
-    
-    <div class="big-card">
-        <h2 class="urdu" style="color: var(--dark-green); font-size: 2.5rem;">ایک منفرد پہچان</h2>
-        <p class="urdu" style="font-size: 1.3rem; text-align: justify;">
-            محمد حشام نائچ کا نام پیر محل کے علاقے میں کسی تعارف کا محتاج نہیں۔ 6 فٹ 2 انچ کے قد آور نوجوان، جن کی شخصیت میں جلال بھی ہے اور جمال بھی۔ ان کا لکی نمبر **47** ان کی شناخت کا ایک لازمی حصہ بن چکا ہے۔ وہ صرف ایک فرد نہیں، بلکہ ایک ایسی سوچ کا نام ہیں جو سادگی اور انسانیت کی قدروں پر مبنی ہے۔
+<div class="section">
+    <div class="card nastaliq">
+        <h2 style="color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block;">ذاتی تفصیلات</h2>
+        <div class="detail-item"><strong>مکمل نام:</strong> محمد حشام نائچ</div>
+        <div class="detail-item"><strong>جائے پیدائش:</strong> 747 گ ب، پیر محل (ضلع ٹوبہ ٹیک سنگھ)</div>
+        <div class="detail-item"><strong>قبیلہ:</strong> نائچ جٹ</div>
+        <div class="detail-item"><strong>قد:</strong> 6 فٹ 2 انچ</div>
+        <div class="detail-item"><strong>لکی نمبر:</strong> 47</div>
+    </div>
+
+    <div class="birth-info nastaliq">
+        <h3>تاریخِ پیدائش کی تفصیلات</h3>
+        <p style="font-size: 1.4rem;">عیسوی تاریخ: **25 ستمبر 2007ء**</p>
+        <p style="font-size: 1.4rem;">اسلامی تاریخ: **12 رمضان 1428ھ**</p>
+        <p style="font-size: 1.4rem;">دن: **منگل** (برکت والا دن)</p>
+        <p style="font-size: 1.1rem; opacity: 0.8; margin-top: 10px;">
+            ستمبر کا مہینہ بہار کی آمد اور منگل کا دن ہمت و استقلال کی علامت سمجھا جاتا ہے۔
         </p>
     </div>
 
-    <div class="grid">
-        <div class="big-card urdu">
-            <h3 style="color: var(--gold);">جسمانی وجاہت</h3>
-            <p>6 فٹ 2 انچ قد، پرکشش شخصیت اور باوقار لب و لہجہ حشام نائچ کو دوسروں سے ممتاز کرتا ہے۔</p>
-        </div>
-        <div class="big-card urdu">
-            <h3 style="color: var(--gold);">اصول پسندی</h3>
-            <p>دکھاوے سے نفرت اور سادگی سے محبت ان کا منشور ہے۔ وہ ہر معاملے میں حق اور سچ کا ساتھ دیتے ہیں۔</p>
-        </div>
-    </div>
-</div>
-
-<div class="highlight-box urdu" id="life">
-    <h2 style="text-align: center; color: var(--gold);">زندگی کا اصل فلسفہ</h2>
-    <p style="font-size: 1.5rem; text-align: center; font-style: italic;">
-        "پیسہ اور عہدہ آنے جانے والی چیزیں ہیں، اصل دولت وہ سکون ہے جو کسی ضرورت مند کی مدد کر کے حاصل ہوتا ہے۔ زندگی کا ہر لمحہ قیمتی ہے، اسے دوسروں کے چہروں پر مسکراہٹ لانے میں صرف کریں۔"
-    </p>
-</div>
-
-<div class="content-section" id="tribe">
-    <div class="big-card urdu">
-        <h2 style="color: var(--dark-green);">خاندانی پس منظر اور تربیت</h2>
-        <p style="font-size: 1.2rem;">
-            حشام نائچ کا تعلق **نائچ جٹ** قبیلے سے ہے، جو اپنی غیرت، مہمان نوازی اور بہادری کے لیے تاریخ میں مشہور ہے۔ آپ کے والد محترم **سکندر علی نائچ**، جو کہ سابق فوجی اور گاؤں کے نمبردار ہیں، نے ان کی تربیت میں خدمتِ خلق کا جذبہ کوٹ کوٹ کر بھرا ہے۔ چک نمبر **747 گ ب** میں ان کا ڈیرہ آج بھی اسی روایتی سخاوت کا مرکز ہے جہاں کسی سوالی کو خالی ہاتھ نہیں بھیجا جاتا۔
+    <div class="card nastaliq">
+        <h2 style="color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block;">زندگی کا عزم</h2>
+        <p style="font-size: 1.2rem; text-align: justify;">
+            حشام نائچ 747 گ ب کی اسی پاک مٹی میں پیدا ہوئے جہاں انہوں نے خدمتِ خلق کا درس پایا۔ آپ کا وژن ہے کہ پاکستان کا ہر نوجوان خود مختار ہو اور ملک سے غربت کا مکمل خاتمہ ہو۔ آپ سادگی کے علمبردار ہیں اور انسانیت کی خدمت کو ہی اپنی زندگی کا اصل مقصد سمجھتے ہیں۔
         </p>
     </div>
 </div>
 
-<div class="content-section" id="vision">
-    <h2 class="urdu" style="text-align: center; color: var(--dark-green); font-size: 2.5rem;">پاکستان کے لیے عزم و وژن</h2>
-    <div class="grid urdu">
-        <div class="big-card">
-            <h4 style="color: var(--gold);">غربت کا خاتمہ</h4>
-            <p>حشام نائچ کا سب سے بڑا مقصد پاکستان سے غربت کا خاتمہ ہے۔ وہ چاہتے ہیں کہ ہر غریب گھرانہ اپنے پاؤں پر کھڑا ہو۔</p>
-        </div>
-        <div class="big-card">
-            <h4 style="color: var(--gold);">کاروباری مواقع</h4>
-            <p>ان کا ماننا ہے کہ نوکری کے بجائے کاروبار (Business) کی طرف رغبت سے ہی ملکی ترقی ممکن ہے۔</p>
-        </div>
-        <div class="big-card">
-            <h4 style="color: var(--gold);">امن اور بھائی چارہ</h4>
-            <p>وہ معاشرے میں معافی اور درگزر کے کلچر کو عام کرنا چاہتے ہیں تاکہ ہر طرف امن و سکون ہو۔</p>
-        </div>
-    </div>
-</div>
-
-<footer class="urdu">
-    <p style="font-size: 1.2rem; color: white;">محمد حشام نائچ - سچائی اور مروّت کا دوسرا نام</p>
-    <p>© 2026 | آفیشل پورٹ فولیو | فرزندِ 747 گ ب، پیر محل</p>
+<footer class="nastaliq">
+    <p>محمد حشام نائچ | باوقار شخصیت، روشن مستقبل</p>
+    <p>© 2026 آفیشل پورٹ فولیو</p>
 </footer>
 
 </body>
