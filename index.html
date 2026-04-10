@@ -4,67 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محمد حشام نائچ | فرزندِ 747 گ ب</title>
-    <!-- گوگل فونٹس برائے خوبصورت اردو -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
-        :root { --primary: #042f1a; --secondary: #c5a01a; --bg: #fdfdfd; }
-        body { font-family: 'Amiri', serif; background-color: var(--bg); margin: 0; padding: 0; color: #333; }
-        .nastaliq { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.8; }
+        :root { --dark-green: #064e3b; --gold: #c5a01a; --soft-bg: #fdfdfd; --card-bg: #ffffff; }
+        body { font-family: 'Amiri', serif; background-color: var(--soft-bg); margin: 0; padding: 0; color: #222; overflow-x: hidden; }
+        .nastaliq { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.5; }
         
-        /* موبائل دوستانہ ڈیزائن */
-        header { background: linear-gradient(135deg, var(--primary), #0a522c); color: white; padding: 60px 20px; text-align: center; border-bottom: 8px solid var(--secondary); }
-        h1 { font-size: 3.5rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); }
-        
-        .section { padding: 40px 20px; max-width: 800px; margin: auto; }
-        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-right: 10px solid var(--secondary); margin-bottom: 30px; }
-        
-        .birth-info { background: var(--primary); color: white; padding: 30px; border-radius: 15px; text-align: center; margin: 20px 0; }
-        .birth-info h3 { color: var(--secondary); font-size: 2rem; }
+        /* Hero Section */
+        header { background: linear-gradient(135deg, var(--dark-green) 0%, #0d9488 100%); color: white; padding: 80px 20px; text-align: center; border-bottom: 10px solid var(--gold); }
+        h1 { font-size: 4rem; margin: 0; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); }
+        .subtitle { font-size: 1.5rem; color: var(--gold); margin-top: 10px; font-weight: bold; }
 
-        .detail-item { font-size: 1.3rem; margin: 15px 0; border-bottom: 1px dashed #ccc; padding-bottom: 5px; }
-        .detail-item strong { color: var(--primary); }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        /* Detailed Sections */
+        .long-card { background: var(--card-bg); padding: 40px; border-radius: 25px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border-right: 15px solid var(--gold); margin-bottom: 40px; position: relative; }
+        .long-card h2 { color: var(--dark-green); font-size: 2.5rem; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+        .long-card p { font-size: 1.3rem; text-align: justify; }
 
-        footer { background: #111; color: #999; text-align: center; padding: 30px; font-size: 0.9rem; }
+        /* Birth Info Box */
+        .birth-special { background: var(--dark-green); color: white; padding: 40px; border-radius: 30px; margin: 40px 0; border: 3px solid var(--gold); }
+        .birth-special h3 { color: var(--gold); font-size: 2.2rem; text-align: center; }
+        .info-row { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 10px 0; font-size: 1.2rem; }
+
+        /* Personality Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .grid-item { background: #f0fdf4; padding: 20px; border-radius: 15px; border: 1px solid #d1fae5; }
+        .grid-item strong { color: var(--dark-green); font-size: 1.2rem; display: block; }
+
+        /* Quote */
+        .final-quote { text-align: center; padding: 60px 20px; background: #fff; border-radius: 50% 50% 0 0; margin-top: 50px; box-shadow: 0 -10px 30px rgba(0,0,0,0.03); }
+
+        footer { background: #111; color: #888; text-align: center; padding: 50px; font-size: 1rem; }
+        
+        @media (max-width: 600px) { h1 { font-size: 2.5rem; } .long-card { padding: 25px; } }
     </style>
 </head>
 <body>
 
 <header>
     <h1 class="nastaliq">محمد حشام نائچ</h1>
-    <p class="nastaliq" style="font-size: 1.5rem; color: var(--secondary);">فرزندِ 747 گ ب، پیر محل</p>
+    <p class="nastaliq subtitle">سادگی، سخاوت اور بلند کردار کا استعارہ</p>
 </header>
 
-<div class="section">
-    <div class="card nastaliq">
-        <h2 style="color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block;">ذاتی تفصیلات</h2>
-        <div class="detail-item"><strong>مکمل نام:</strong> محمد حشام نائچ</div>
-        <div class="detail-item"><strong>جائے پیدائش:</strong> 747 گ ب، پیر محل (ضلع ٹوبہ ٹیک سنگھ)</div>
-        <div class="detail-item"><strong>قبیلہ:</strong> نائچ جٹ</div>
-        <div class="detail-item"><strong>قد:</strong> 6 فٹ 2 انچ</div>
-        <div class="detail-item"><strong>لکی نمبر:</strong> 47</div>
-    </div>
-
-    <div class="birth-info nastaliq">
-        <h3>تاریخِ پیدائش کی تفصیلات</h3>
-        <p style="font-size: 1.4rem;">عیسوی تاریخ: **25 ستمبر 2007ء**</p>
-        <p style="font-size: 1.4rem;">اسلامی تاریخ: **12 رمضان 1428ھ**</p>
-        <p style="font-size: 1.4rem;">دن: **منگل** (برکت والا دن)</p>
-        <p style="font-size: 1.1rem; opacity: 0.8; margin-top: 10px;">
-            ستمبر کا مہینہ بہار کی آمد اور منگل کا دن ہمت و استقلال کی علامت سمجھا جاتا ہے۔
+<div class="container nastaliq">
+    <!-- سیکشن 1: ابتدائی تعارف -->
+    <div class="long-card">
+        <h2>ابتدائی تعارف و پس منظر</h2>
+        <p>
+            پیر محل کی مردم خیز مٹی کے چک نمبر **747 گ ب** میں پیدا ہونے والے محمد حشام نائچ ایک ایسی شخصیت ہیں جن کے کردار میں جٹ قبیلے کی غیرت اور درویشی کا حسین امتزاج ملتا ہے۔ آپ کے والد محترم **سکندر علی نائچ** صاحب، جو کہ آرمی سے ریٹائرڈ اور علاقے کے نمبردار ہیں، نے حشام کی تربیت میں ان اعلیٰ اقدار کو شامل کیا ہے جو آج کے دور میں نایاب ہیں۔
         </p>
     </div>
 
-    <div class="card nastaliq">
-        <h2 style="color: var(--primary); border-bottom: 2px solid var(--secondary); display: inline-block;">زندگی کا عزم</h2>
-        <p style="font-size: 1.2rem; text-align: justify;">
-            حشام نائچ 747 گ ب کی اسی پاک مٹی میں پیدا ہوئے جہاں انہوں نے خدمتِ خلق کا درس پایا۔ آپ کا وژن ہے کہ پاکستان کا ہر نوجوان خود مختار ہو اور ملک سے غربت کا مکمل خاتمہ ہو۔ آپ سادگی کے علمبردار ہیں اور انسانیت کی خدمت کو ہی اپنی زندگی کا اصل مقصد سمجھتے ہیں۔
+    <!-- سیکشن 2: پیدائش کی برکتیں -->
+    <div class="birth-special">
+        <h3>ولادتِ سعادت کی تفصیلات</h3>
+        <div class="info-row"><span>عیسوی تاریخ:</span> <span>25 ستمبر 2007ء</span></div>
+        <div class="info-row"><span>اسلامی تاریخ:</span> <span>12 رمضان المبارک 1428ھ</span></div>
+        <div class="info-row"><span>دن:</span> <span>منگل (برکت و ہمت کا دن)</span></div>
+        <div class="info-row"><span>مقامِ پیدائش:</span> <span>747 گ ب، پیر محل</span></div>
+        <p style="font-size: 1.1rem; margin-top: 20px; opacity: 0.9; text-align: center;">
+            **ستمبر کا مہینہ** حشام کی شخصیت کی طرح پُروقار ہے، جبکہ **رمضان المبارک** کی برکتوں نے ان کے مزاج میں وہ سخاوت پیدا کی ہے جو آج ان کے ڈیرے کی پہچان ہے۔
+        </p>
+    </div>
+
+    <!-- سیکشن 3: جسمانی وجاہت اور اوصاف -->
+    <div class="long-card">
+        <h2>جسمانی و باطنی وجاہت</h2>
+        <div class="grid">
+            <div class="grid-item"><strong>قد و قامت</strong>6 فٹ 2 انچ (باوقار اور بلند قامت)</div>
+            <div class="grid-item"><strong>لکی نمبر</strong>47 (شناخت اور خوش بختی کی علامت)</div>
+            <div class="grid-item"><strong>مزاج</strong>انتہائی سادہ، دکھاوے سے پاک اور مخلص</div>
+            <div class="grid-item"><strong>خاص صفت</strong>معافی مانگنے میں پہل کرنا اور دل نہ دکھانا</div>
+        </div>
+        <p style="margin-top: 20px;">
+            حشام نائچ کا 6 فٹ 2 انچ کا قد ان کی شخصیت کو دوسروں سے ممتاز کرتا ہے، لیکن ان کی اصل بلندی ان کے اخلاق میں ہے جو ہر امیر اور غریب کو اپنا گرویدہ بنا لیتی ہے۔
+        </p>
+    </div>
+
+    <!-- سیکشن 4: ڈیرہ اور خدمتِ خلق -->
+    <div class="long-card" style="border-right-color: var(--dark-green);">
+        <h2>747 گ ب کا ڈیرہ اور سخاوت</h2>
+        <p>
+            حشام نائچ کا ڈیرہ پیر محل کے علاقے میں سخاوت کا مرکز مانا جاتا ہے۔ ان کے والد سکندر علی نائچ کی ریٹائرمنٹ اور نمبرداری کے بعد، حشام نے اس روایت کو زندہ رکھا ہے کہ ڈیرے پر آنے والا کوئی بھی مسافر یا ضرورت مند کبھی خالی ہاتھ نہیں جاتا۔ ان کا ماننا ہے کہ "اصل بادشاہت وہ ہے جو لوگوں کے دلوں پر کی جائے"۔
+        </p>
+    </div>
+
+    <!-- سیکشن 5: مستقبل کا وژن -->
+    <div class="long-card">
+        <h2>عظیم مقصد اور پاکستان سے محبت</h2>
+        <p>
+            حشام نائچ کا خواب ہے کہ پاکستان کے ہر نوجوان کے پاس اپنا روزگار ہو۔ وہ فضول خرچی کے سخت خلاف ہیں اور چاہتے ہیں کہ ملک سے غربت کا نام و نشان مٹ جائے۔ وہ خاموشی سے غریبوں کی مدد کرنے پر یقین رکھتے ہیں تاکہ کسی کی عزتِ نفس مجروح نہ ہو۔
         </p>
     </div>
 </div>
 
+<div class="final-quote nastaliq">
+    <h3 style="color: var(--gold); font-size: 2rem;">سنہرا قول</h3>
+    <p style="font-size: 1.8rem; max-width: 700px; margin: auto; padding: 20px;">
+        "زندگی کا کوئی بھروسہ نہیں، اجل کسی بھی وقت آ سکتی ہے۔ اس لیے سب سے اچھا سلوک کرو، پیسہ کچھ نہیں، صرف اخلاق ہی رہ جائے گا۔"
+    </p>
+</div>
+
 <footer class="nastaliq">
-    <p>محمد حشام نائچ | باوقار شخصیت، روشن مستقبل</p>
-    <p>© 2026 آفیشل پورٹ فولیو</p>
+    <p style="font-size: 1.5rem; color: white;">محمد حشام نائچ - فرزندِ پیر محل</p>
+    <p>© 2026 | آفیشل بائیو گرافی | 747 گ ب کی پہچان</p>
 </footer>
 
 </body>
